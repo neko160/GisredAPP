@@ -124,7 +124,7 @@ public class MapActivity extends AppCompatActivity {
 
         //Agrega layers dinámicos.
         addLayersToMap(credenciales, "DYNAMIC", "SED", din_urlEquiposPunto, null, false);
-       /* addLayersToMap(credenciales, "DYNAMIC", "SSEE", din_urlEquiposPunto, null, false);
+        addLayersToMap(credenciales, "DYNAMIC", "SSEE", din_urlEquiposPunto, null, false);
         addLayersToMap(credenciales, "DYNAMIC", "SALIDAALIM", din_urlEquiposPunto, null, false);
         addLayersToMap(credenciales, "DYNAMIC", "REDMT", din_urlTramos, null, false);
         addLayersToMap(credenciales, "DYNAMIC", "REDBT", din_urlTramos, null, false);
@@ -137,12 +137,12 @@ public class MapActivity extends AppCompatActivity {
         addLayersToMap(credenciales, "DYNAMIC", "MEDIDORES", din_urlMedidores, null, false);
         addLayersToMap(credenciales, "DYNAMIC", "CONCESIONES", din_urlConcesiones, null, false);
         addLayersToMap(credenciales, "DYNAMIC", "DIRECCIONES", din_urlDirecciones, null, false);
-        addLayersToMap(credenciales, "DYNAMIC", "EMPALMES", din_urlClientes, null, false);*/
+        addLayersToMap(credenciales, "DYNAMIC", "EMPALMES", din_urlClientes, null, false);
 
         //Añade Layer al Mapa
         myMapView.addLayer(mRoadBaseMaps, 0);
         myMapView.addLayer(LySED, 1);
-        /*myMapView.addLayer(LySSEE,2);
+        myMapView.addLayer(LySSEE,2);
         myMapView.addLayer(LySALIDAALIM,3);
         myMapView.addLayer(LyREDMT,4);
         myMapView.addLayer(LyREDBT,5);
@@ -155,7 +155,7 @@ public class MapActivity extends AppCompatActivity {
         myMapView.addLayer(LyMEDIDORES,12);
         myMapView.addLayer(LyCONCESIONES,13);
         myMapView.addLayer(LyDIRECCIONES,14);
-        myMapView.addLayer(LyEMPALMES,15);*/
+        myMapView.addLayer(LyEMPALMES,15);
     }
 
     @Override
@@ -304,10 +304,11 @@ public class MapActivity extends AppCompatActivity {
 
                         for (Integer i : mSelectedItems) {
                             selectedIndex += i + ", ";
-                            switch (id) {
+                            switch (i) {
                                 //token srv
                                 case 0:
                                     LySED.setVisible(true);
+                                    System.out.println("-----------------------PASE SED-------------------------");
                                     break;
                                 case 1:
                                     LySSEE.setVisible(true);
@@ -374,10 +375,10 @@ public class MapActivity extends AppCompatActivity {
 
     public void setLayerOff(){
         LySED.setVisible(false);
-      /*  LySSEE.setVisible(false);
+        LySSEE.setVisible(false);
         LySALIDAALIM.setVisible(false);
-        LyREDMT.setVisible(false);
-        LyREDBT.setVisible(false);
+       LyREDMT.setVisible(false);
+         LyREDBT.setVisible(false);
         LyREDAP.setVisible(false);
         LyPOSTES.setVisible(false);
         LyEQUIPOSLINEA.setVisible(false);
@@ -387,7 +388,7 @@ public class MapActivity extends AppCompatActivity {
         LyMEDIDORES.setVisible(false);
         LyCONCESIONES.setVisible(false);
         LyDIRECCIONES.setVisible(false);
-        LyEMPALMES.setVisible(false);*/
+        LyEMPALMES.setVisible(false);
     }
 
     public void setLayersURL(String layerURL, String tipo){
@@ -564,6 +565,13 @@ public class MapActivity extends AppCompatActivity {
                         LyMapabase = new ArcGISDynamicMapServiceLayer(url,null,credencial);
                         LyMapabase.setVisible(visibilidad);
                         break;
+
+                    case "SALIDAALIM":
+                        int array15[]; //declaracion arreglo de tipo numerico
+                        array15 = new int[1];
+                        array15[0] = 2;
+                        LySALIDAALIM = new ArcGISDynamicMapServiceLayer(url,array15,credencial);
+                        LySALIDAALIM.setVisible(visibilidad);
 
                     default:
                         Toast.makeText(MapActivity.this, "Problemas agregando layers dinámicos.", Toast.LENGTH_SHORT);
