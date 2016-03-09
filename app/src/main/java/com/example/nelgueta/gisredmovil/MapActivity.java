@@ -189,6 +189,7 @@ public class MapActivity extends AppCompatActivity {
                 myMapView.removeLayer(0);
                 myMapView.addLayer(mAerialBaseMaps, 0);
                 return true;
+            
             case R.id.AerialWithLabel:
                 if (item.isChecked()) item.setChecked(false);
                 else item.setChecked(true);
