@@ -141,13 +141,13 @@ public class MapActivity extends AppCompatActivity {
 
         //Añade Layer al Mapa
         myMapView.addLayer(mRoadBaseMaps, 0);
-        myMapView.addLayer(LySED, 1);
-        myMapView.addLayer(LySSEE,2);
-        myMapView.addLayer(LySALIDAALIM,3);
-        myMapView.addLayer(LyREDMT,4);
+        myMapView.addLayer(LySSEE,1);
+        myMapView.addLayer(LySALIDAALIM,2);
+        myMapView.addLayer(LyPOSTES,3);
+        myMapView.addLayer(LyREDAP,4);
         myMapView.addLayer(LyREDBT,5);
-        myMapView.addLayer(LyREDAP,6);
-        myMapView.addLayer(LyPOSTES,7);
+        myMapView.addLayer(LyREDMT,6);
+        myMapView.addLayer(LySED,7);
         myMapView.addLayer(LyEQUIPOSLINEA,8);
         myMapView.addLayer(LyEQUIPOSPTO,9);
         myMapView.addLayer(LyLUMINARIAS,10);
@@ -377,8 +377,8 @@ public class MapActivity extends AppCompatActivity {
         LySED.setVisible(false);
         LySSEE.setVisible(false);
         LySALIDAALIM.setVisible(false);
-       LyREDMT.setVisible(false);
-         LyREDBT.setVisible(false);
+        LyREDMT.setVisible(false);
+        LyREDBT.setVisible(false);
         LyREDAP.setVisible(false);
         LyPOSTES.setVisible(false);
         LyEQUIPOSLINEA.setVisible(false);
@@ -508,7 +508,7 @@ public class MapActivity extends AppCompatActivity {
                         int array6[]; //declaracion arreglo de tipo numerico
                         array6 = new int[1];
                         array6[0] = 2;
-                        LyPOSTES = new ArcGISDynamicMapServiceLayer(url,array6,credencial);
+                        LyPOSTES = new ArcGISDynamicMapServiceLayer(url,null,credencial);
                         LyPOSTES.setVisible(visibilidad);
                         break;
                     case "EQUIPOS_LINEA":
