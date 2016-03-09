@@ -141,7 +141,7 @@ public class MapActivity extends AppCompatActivity {
 
         //Añade Layer al Mapa
         myMapView.addLayer(mRoadBaseMaps, 0);
-        myMapView.addLayer(LySED,1);
+        myMapView.addLayer(LySED, 1);
         /*myMapView.addLayer(LySSEE,2);
         myMapView.addLayer(LySALIDAALIM,3);
         myMapView.addLayer(LyREDMT,4);
@@ -183,13 +183,14 @@ public class MapActivity extends AppCompatActivity {
                 myMapView.removeLayer(0);
                 myMapView.addLayer(mRoadBaseMaps, 0);
                 return true;
+
             case R.id.Aerial:
                 if (item.isChecked()) item.setChecked(false);
                 else item.setChecked(true);
                 myMapView.removeLayer(0);
                 myMapView.addLayer(mAerialBaseMaps, 0);
                 return true;
-            
+
             case R.id.AerialWithLabel:
                 if (item.isChecked()) item.setChecked(false);
                 else item.setChecked(true);
@@ -559,6 +560,11 @@ public class MapActivity extends AppCompatActivity {
                         LyEMPALMES = new ArcGISDynamicMapServiceLayer(url,array14,credencial);
                         LyEMPALMES.setVisible(visibilidad);
                         break;
+                    case "MAPABASECHQ":
+                        LyMapabase = new ArcGISDynamicMapServiceLayer(url,null,credencial);
+                        LyMapabase.setVisible(visibilidad);
+                        break;
+
                     default:
                         Toast.makeText(MapActivity.this, "Problemas agregando layers dinámicos.", Toast.LENGTH_SHORT);
                         break;
