@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">GisredMovil</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_usuario">User</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <!--Titulo content menus-->
+    <string name="title_menu">Modulos</string>
+    <string name="title_activity_map">MapActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Credenciales Arcgis -->
+    <string name="user">vialactea\\nelgueta</string>
+    <string name="password">Feb.2016</string>
+
+    <!--Servicios Arcgis-->
+    <string name="url_service_1">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Equipos_pto_006/MapServer/0</string>
+    <string name="url_service_tramos"> http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Tramos_006/MapServer</string>
+    <string name="LayerBaseChqURL">http://gisred.chilquinta.cl:5555/Arcgis/rest/services/MapaBase/MapServer</string>
+
+    <string name="Nom_mod_sel">Test</string>
+
+    <!--Nav Menu Lateral Capas-->
+    <string name="nav_mapa">Mapa</string>
+    <string name="nav_capa">Capas</string>
+    <string name="nav_busqueda">Buscar</string>
+    <string name="nav_Tramos_MT">MT</string>
+    <string name="nav_Tramos_BT">BT</string>
+    <string name="nav_Tramos_AP">AP</string>
+    <string name="nav_Direcciones">Direcciones</string>
+    <string name="nav_Clientes">Clientes</string>
+    <string name="nav_Empalmes">Empalmes</string>
+    <string name="nav_Luminarias">Luminarias</string>
+    <string name="nav_Equipos_ap">Equipos AP</string>
+    <string name="nav_ssee">SSEE</string>
+    <string name="nav_sed">SED</string>
+    <string name="nav_equipos">Equipos</string>
+    <string name="nav_equipos_sub">Equipos Sub</string>
+    <string name="nav_postes">Postes</string>
+    <string name="nav_camaras">Cámaras</string>
+    <string name="nav_concesiones">Concesiones</string>
+    <string name="nav_On">On</string>
+    <string name="nav_Off">Off</string>
+
+    <!-- Servicios para featureLayer-->
+
+
+
+    <!-- Servicios para dynamicLayer-->
+    <string name="url_EquiposLinea">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Equipos_Linea_006/MapServer</string>
+    <string name="url_token">http://gisred.chilquinta.cl:5555/arcgis/tokens/</string>
+    <string name="url_TRAMOS">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Tramos_006/MapServer</string>
+    <string name="url_EquiposPTO">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Equipos_pto_006/MapServer</string>
+    <string name="url_Nodos">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Chilquinta/MapServer</string>
+    <string name="url_Luminarias">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Luminarias/MapServer</string>
+    <string name="url_Clientes">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/ClientesV2/MapServer</string>
+    <string name="url_Concesiones">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Concesiones006/MapServer</string>
+    <string name="url_medidores">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Chilquinta_006/Medidores/MapServer</string>
+    <string name="url_Direcciones">http://gisred.chilquinta.cl:5555/arcgis/rest/services/Cartografia/DMPS/MapServer</string>
+    <!-- Mapabase -->
+    <string name="url_Mapabase">http://gisred.chilquinta.cl:5555/Arcgis/rest/services/MapaBase/MapServer</string>
+
+</resources>
