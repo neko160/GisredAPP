@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EmpresaActivity"
+    tools:showIn="@layout/activity_empresa">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="5">
+
+            <TableRow
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnChilquinta"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chilquinta_gris" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+                <ImageButton android:id="@+id/btnLitoral"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/litoral_gris"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+                <ImageButton  android:id="@+id/btnCasablanca"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/casablanca_gris"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+                <ImageButton  android:id="@+id/btnLinares"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/linares_gris"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+                <ImageButton  android:id="@+id/btnParral"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/parral_gris"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

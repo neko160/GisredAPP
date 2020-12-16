@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DA291C</color>
+    <color name="colorPrimaryDark">#D02010</color>
+    <color name="colorAccent">#FF8200</color>
+    <color name="white">#fafafa</color>
+    <color name="textPrimary">#504E4E</color>
+
+    <color name="dialog_succes">#4CAF50</color>
+    <color name="dialog_warning">#FFC107</color>
+    <color name="dialog_error">#F44336</color>
+    <color name="dialog_neutral">#ACA9A9</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="green">#005500</color>
+</resources>
